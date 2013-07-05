@@ -1,5 +1,5 @@
 ---- ----------------------------------------------------------------------
----- About:    Several examples who to create and query comments
+---- About:    Several examples how to create and query comments
 ---- Revision: 1
 ---- ----------------------------------------------------------------------
 
