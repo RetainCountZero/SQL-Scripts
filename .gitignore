@@ -1,0 +1,11 @@
+# .gitignore file
+# Ignore alle object files (o) and archive files (a)
+*.[oa]
+# Ignore emacs backup files
+*~
+# Ignore common backup files
+*.bak
+# Ignore temp folder
+temp/
+# Ignore tmp folder
+tmp/

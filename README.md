@@ -6,4 +6,11 @@ The usage of these scripts is at your own risk. No responsiblities are taken by 
 
 # List of scripts
 
-## tbd
+## Generic Scripts
+
+These scripts are of general interest for any Oracle instance and schema
+
+### Generic-Comments.sql
+
+Hints about how to add, remove, query comment information on tables and columns.
+
