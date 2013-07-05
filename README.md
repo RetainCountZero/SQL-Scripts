@@ -10,10 +10,10 @@ The usage of these scripts is at your own risk. No responsiblities are taken by 
 
 These scripts are of general interest for any Oracle instance and schema
 
-### Generic-Comments.sql
+* Generic-Comments.sql
 
-Hints about how to add, remove, query comment information on tables and columns.
+  Hints about how to add, remove, query comment information on tables and columns.
 
-### Generic-Refresh-MViewlogs.sql
+* Generic-Refresh-MViewlogs.sql
 
-Rebuild all Materialized View Logs within a schema. This can be used when an ORA-12048 in conjunction with ORA-12034 error occurs.
+  Rebuild all Materialized View Logs within a schema. This can be used when an ORA-12048 in conjunction with ORA-12034 error occurs.
