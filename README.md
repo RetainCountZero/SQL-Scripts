@@ -17,3 +17,13 @@ These scripts are of general interest for any Oracle instance and schema
 * *Generic-Refresh-MViewlogs.sql*
 
   Rebuild all Materialized View Logs within a schema. This can be used when an ORA-12048 in conjunction with ORA-12034 error occurs.
+
+## BelVis3 EDM Scripts
+
+These scripts are geared towards tasks related to BelVis3 Energy Data Management (EDM).
+
+* BelVis-Create-User.sql
+
+  How to create RESOURCE2, create a tablespace, create a user and grant sufficient privileges. After using this script a new 'Mandant' can be created in the 'BelVis Benutzerverwaltung'.
+  Also a hint how to drop users no longer required.
+  
