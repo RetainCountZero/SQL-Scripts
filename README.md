@@ -27,3 +27,7 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
   How to create RESOURCE2, create a tablespace, create a user and grant sufficient privileges. After using this script a new 'Mandant' can be created in the 'BelVis Benutzerverwaltung'.
   Also a hint how to drop users no longer required.
   
+* BelVis-Systeminfo-Correction.sql
+
+  This scripts sets the values of the tablespace and indexspace. It can be applied after an import with the remap\_schema and remap\_tablespace options and before a run of dbmaintenance.exe.
+  
