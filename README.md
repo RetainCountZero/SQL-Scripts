@@ -22,12 +22,16 @@ These scripts are of general interest for any Oracle instance and schema
 
 These scripts are geared towards tasks related to BelVis3 Energy Data Management (EDM).
 
-* BelVis-Create-User.sql
+* *BelVis-Check-MV-Owner.sql*
+
+   BelVis uses materialized views based on data in the same schema. Sometimes the materialized view and its data source get mixed up. Run this script to determine if this problem matters on your system.
+
+* *BelVis-Create-User.sql*
 
   How to create RESOURCE2, create a tablespace, create a user and grant sufficient privileges. After using this script a new 'Mandant' can be created in the 'BelVis Benutzerverwaltung'.
   Also a hint how to drop users no longer required.
   
-* BelVis-Systeminfo-Correction.sql
+* *BelVis-Systeminfo-Correction.sql*
 
   This scripts sets the values of the tablespace and indexspace. It can be applied after an import with the remap\_schema and remap\_tablespace options and before a run of dbmaintenance.exe.
   
