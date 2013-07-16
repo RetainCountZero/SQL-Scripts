@@ -21,6 +21,10 @@ These scripts are of general interest for any Oracle instance and schema
   * How to determine content of unknown dump files
   * How to use expdp and impdp utilities
 
+* *Generic-Deprecated-Import-Export.sql*
+
+  Examples of imp and exp usage. Deprecated, use Data Pump instead!
+
 * *Generic-Refresh-MViewlogs.sql*
 
   Rebuild all Materialized View Logs within a schema. This can be used when an ORA-12048 in conjunction with ORA-12034 error occurs.
