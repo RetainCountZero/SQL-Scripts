@@ -14,6 +14,13 @@ These scripts are of general interest for any Oracle instance and schema
 
   Hints about how to add, remove, query comment information on tables and columns.
 
+* *Generic-Data-Pump-info.sql*
+
+  Hints about Data Pump
+  * How to setup a directory objects
+  * How to determine content of unknown dump files
+  * How to use expdp and impdp utilities
+
 * *Generic-Refresh-MViewlogs.sql*
 
   Rebuild all Materialized View Logs within a schema. This can be used when an ORA-12048 in conjunction with ORA-12034 error occurs.
