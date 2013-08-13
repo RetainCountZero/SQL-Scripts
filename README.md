@@ -42,7 +42,7 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
   How to create RESOURCE2, create a tablespace, create a user and grant sufficient privileges. After using this script a new 'Mandant' can be created in the 'BelVis Benutzerverwaltung'.
   Also a hint how to drop users no longer required.
 
-* *BelVis-Script-on-all-BelVisAdm*
+* *BelVis-Script-on-all-BelVisAdm.sql*
 
   A very simple script which queries the BelVisAdm schema and creates a batch task file to run a predefined sql-script against all BelVis tenants.
 
