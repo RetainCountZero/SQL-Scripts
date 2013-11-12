@@ -19,7 +19,7 @@ SELECT * FROM datapump_dir_objs;
 --- A method to look at the master table before the actual import
 ---
 -- Perform a dummy import by using the SQLFILE argument like this
--- impdp system/manager@belvis316 directory=data_pump_dir dumpfile=mydumpfile.dmp sqlfile=sql.txt nologfile=y keep_master=y
+-- impdp system/***@belvis316 directory=data_pump_dir dumpfile=mydumpfile.dmp sqlfile=sql.txt nologfile=y keep_master=y
 -- Take note of the name of the master table (Master table "SYSTEM"."SYS_SQL_FILE_FULL_01" successfully loaded/unloaded)
 -- Check the data in the master table
 SELECT original_object_schema, original_object_name FROM sys_sql_file_full_01 WHERE original_object_schema IS NOT NULL;
