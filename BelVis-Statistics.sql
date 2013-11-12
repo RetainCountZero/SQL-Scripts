@@ -66,12 +66,11 @@ BEGIN
   << table_without_tsd >>
   DECLARE
     CURSOR table_cur IS
-      -- All non-locked tables except TSD_% and TSC_%
+      -- All non-locked tables except TSD_% or TSC_%
     SELECT ut.table_name FROM user_tables ut
       JOIN user_tab_statistics uts ON ut.table_name = uts.table_name
       WHERE uts.stattype_locked IS NULL
-        AND ut.table_name NOT LIKE 'TSD_%'
-        AND ut.table_name NOT LIKE 'TSC_%';
+        AND (ut.table_name NOT LIKE 'TSD_%' OR ut.table_name NOT LIKE 'TSC_%');
   BEGIN
     DBMS_OUTPUT.PUT_LINE(TO_CHAR(SYSDATE, l_date_format) || ' [INFO:] Start statistics for tables except TSD_% and TSC_%');
     FOR table_rec IN table_cur LOOP
