@@ -225,7 +225,24 @@ BEGIN
         numdist => 100000);
     DBMS_OUTPUT.PUT_LINE(TO_CHAR(SYSDATE, l_date_format) || ' [INFO:]   End set statistics for PK410');
   END zrstatus_set_pk410_stats;
-    
+
+---
+--- Set statistics for UTILMD_IDENT_SETS, c.f. Case 109471
+---
+  << utilmd_identset_stats >>
+  BEGIN
+    DBMS_OUTPUT.PUT_LINE(TO_CHAR(SYSDATE, l_date_format) || ' [INFO:] Start set statistics for UTILMD_IDENTSET_ENTRIES table');
+    DBMS_STATS.UNLOCK_TABLE_STATS (l_user, 'UTILMD_IDENTSET_ENTRIES');
+    DBMS_STATS.SET_TABLE_STATS(
+        ownname => l_user,
+        tabname => 'UTILMD_IDENTSET_ENTRIES',
+        numrows => 20000,
+        numblks => 100,
+        avgrlen => 25);
+    DBMS_STATS.LOCK_TABLE_STATS (user, 'UTILMD_IDENTSET_ENTRIES');
+    DBMS_OUTPUT.PUT_LINE(TO_CHAR(SYSDATE, l_date_format) || ' [INFO:]   End set statistics for UTILMD_IDENTSET_ENTRIES table');
+  END utilmd_identset_stats;
+
   -- Print total duration
   DBMS_OUTPUT.PUT_LINE(TO_CHAR(SYSDATE, l_date_format) || ' [INFO:] Total duration for user ' || l_user || ' was ' || 
                        TO_CHAR(SYSTIMESTAMP - l_date_start, l_date_format));
