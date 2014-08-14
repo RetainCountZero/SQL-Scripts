@@ -53,4 +53,7 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
 * *BelVis-Systeminfo-Correction.sql*
 
   This scripts sets the values of the tablespace and indexspace. It can be applied after an import with the remap\_schema and remap\_tablespace options and before a run of dbmaintenance.exe.
-  
+
+* *BelVis-Summertime-2081-2099.sql*
+
+  This script adds summertime entries to the table SOMMERZEIT.  A commit after running the script is required.
