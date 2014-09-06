@@ -29,6 +29,10 @@ These scripts are of general interest for any Oracle instance and schema
 
   Rebuild all Materialized View Logs within a schema. This can be used when an ORA-12048 in conjunction with ORA-12034 error occurs.
 
+* *Generic-bad-sql.sql*
+
+  A script from Taktum to identify sql statements with low performance.
+
 ## BelVis3 EDM Scripts
 
 These scripts are geared towards tasks related to BelVis3 Energy Data Management (EDM).
