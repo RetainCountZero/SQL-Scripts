@@ -29,7 +29,7 @@ These scripts are of general interest for any Oracle instance and schema
 
   Rebuild all Materialized View Logs within a schema. This can be used when an ORA-12048 in conjunction with ORA-12034 error occurs.
 
-* *Generic-bad-sql.sql*
+* *Generic-Bad-SQL.sql*
 
   A script from Taktum to identify sql statements with low performance.
 
