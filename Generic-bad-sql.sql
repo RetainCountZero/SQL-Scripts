@@ -3,19 +3,17 @@
 ---- Revision: 1
 ---- ----------------------------------------------------------------------
 
---- Der folgende Befehl zeigt für die SQL-Befehle, die sich im SQL-Cache 
---- befinden, wie oft sie ausgeführt wurden und wieviele Blockzugriffe sie zur 
---- Abarbeitung benötigten. Ausserdem wird die Trefferquote des Befehls im 
---- Datencache angezeigt. Damit lassen sich sehr schnell "schlecht optimierte" 
---- SQL-Befehle herausfinden. Trefferquoten kleiner 70% deuten regelmäßig darauf 
---- hin, dass eine Tabelle vollständig ohne Index-Zugriffe gelesen wird. Ggf. 
---- ist ein weiterer Index hinzuzufügen, um den Befehl zu optimieren. Da die 
---- Statistik nur die Befehle anzeigt, die sich gerade im SQL-Cache befinden, 
---- muss die folgende Abfrage ggf. mehrfach täglich zu unterschiedlichen 
---- Zeitpunkten aufgerufen werden.
+--- The following command shows for SQL statements from the SQL-Cache
+--- * how often they are executed (Executions)
+--- * how many block access are required for their execution (Gets)
+--- * Ratio of gets to exec
+--- * Hit ratio
+--- A hit ratio below 70% indicates a read access without any index.
+--- Adding an index for these statements might be considered.
+--- N.B.: This statements works only the the SQL-Cache.  Run it more
+---       than once to get a better picture of what is going on.
 ---
---- Die Einschränkung " buffer_gets > 1000" dient dazu, die Ergebnismenge zu 
---- reduzieren. Es werden damit nur relevante Befehle angezeigt.
+--- The filter "buffer_gets > 1000" limits the number of results.
 
 SELECT 
   to_char(executions, '999G999G990') "Executions",
