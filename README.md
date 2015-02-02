@@ -41,6 +41,10 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
 
    BelVis uses materialized views based on data in the same schema. Sometimes the materialized view and its data source get mixed up. Run this script to determine if this problem matters on your system.
 
+* *BelVis-Create-Read-Only-User.sql
+
+   Script to create a read-only user.  The scripts drops an existing read-only user.  Then it creates a new read-only user, grants access to tables and views of the source schema.  Finally it creates synonyms for all tables and views of the source schema for convenient access.
+
 * *BelVis-Create-User.sql*
 
   How to create RESOURCE2, create a tablespace, create a user and grant sufficient privileges. After using this script a new 'Mandant' can be created in the 'BelVis Benutzerverwaltung'.
