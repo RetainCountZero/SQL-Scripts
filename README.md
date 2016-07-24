@@ -65,3 +65,7 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
 * *BelVis-Summertime-2081-2099.sql*
 
   This script adds summertime entries to the table SOMMERZEIT.  A commit after running the script is required.
+  
+* *BelVis-Render-EnergyDistributionBookTemplatePFM.sql*
+
+  This script renders a HTML text (via DBMS_OUTPUT) that consists of the book-templates defined in the function "Energiemengen Verteilen".
