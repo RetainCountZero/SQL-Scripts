@@ -9,3 +9,4 @@
 temp/
 # Ignore tmp folder
 tmp/
+.DS_Store

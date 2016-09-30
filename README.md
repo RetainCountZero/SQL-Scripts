@@ -69,3 +69,7 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
 * *BelVis-Render-EnergyDistributionBookTemplatePFM.sql*
 
   This script renders a HTML text (via DBMS_OUTPUT) that consists of the book-templates defined in the function "Energiemengen Verteilen".
+
+* *BelVis-Recreate-MV-Ext-Stat.sql*
+
+  This script can be used to correct the ORA-12048 & ORA-00904 error combination.  The error is related to Oracle's extended statistics feature in 12.1.x.  This script avoids downtime in comparison to using DbMaintence.
