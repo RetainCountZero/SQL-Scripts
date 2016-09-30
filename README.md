@@ -52,7 +52,7 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
 
 * *BelVis-Script-on-all-BelVisAdm.sql*
 
-  A very simple script which queries the BelVisAdm schema and creates a batch task file to run a predefined sql-script against all BelVis tenants.
+  A very simple script which queries the BelVisAdm schema and creates a batch task file to run a predefined sql-script against all BelVis tenants.  Works only up to BelVis 3.22.x
 
 * *BelVis-Statistics.sql*
 
