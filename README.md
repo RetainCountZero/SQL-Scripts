@@ -33,6 +33,10 @@ These scripts are of general interest for any Oracle instance and schema
 
   A script from Taktum to identify sql statements with low performance.
 
+* *Generic-DDL-Log.sql*
+
+  Creates a table within the current schema to store all DDL events and generates a matching trigger to log all DDL events into a table called DDL_LOG.
+
 ## BelVis3 EDM Scripts
 
 These scripts are geared towards tasks related to BelVis3 Energy Data Management (EDM).
