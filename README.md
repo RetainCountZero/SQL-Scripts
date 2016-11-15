@@ -69,11 +69,18 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
 * *BelVis-Summertime-2081-2099.sql*
 
   This script adds summertime entries to the table SOMMERZEIT.  A commit after running the script is required.
+
+* *BelVis-Recreate-MV-Ext-Stat.sql*
+
+  This script can be used to correct the ORA-12048 & ORA-00904 error combination.  The error is related to Oracle's extended statistics feature in 12.1.x.  This script avoids downtime in comparison to using DbMaintence.
+
+* *BelVis Entstehungsbeginn-PFM.sql*
+
+  This scripts modifies the "Entstehungsbeginn" in BelVis PFM.  Since there is no GUI option to modify the setting, this setting is changed in the database directly.  Review Script before executing and adapt the desired date.  With new tenants there may be not entry at all in the database - for this case two conditional insert statements are included in the script.  This script works on BelVis EDM and PFM, however in EDM using the GUI is recommended.
+
+## BelVis3 PFM Scripts
   
 * *BelVis-Render-EnergyDistributionBookTemplatePFM.sql*
 
   This script renders a HTML text (via DBMS_OUTPUT) that consists of the book-templates defined in the function "Energiemengen Verteilen".
 
-* *BelVis-Recreate-MV-Ext-Stat.sql*
-
-  This script can be used to correct the ORA-12048 & ORA-00904 error combination.  The error is related to Oracle's extended statistics feature in 12.1.x.  This script avoids downtime in comparison to using DbMaintence.
