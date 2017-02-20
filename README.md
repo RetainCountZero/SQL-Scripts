@@ -84,3 +84,7 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
 
   This script renders a HTML text (via DBMS_OUTPUT) that consists of the book-templates defined in the function "Energiemengen Verteilen".
 
+* *BelVis-DealWorthCalculation-PFM.sql*
+
+  This script creates a DBMS-Job which runs the procedure CALC\_DEALWORTH\_BY\_PRICEVL in a fixed repetition cycle.  This default cycle is set to 30 minutes and all deals from 2016-01-01, however this can be modified in the script.  The script deletes the DBMS-Job first.  If you want to keep the existing job, please execute only the create section of the script.
+  
