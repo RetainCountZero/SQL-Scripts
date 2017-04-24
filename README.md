@@ -60,7 +60,7 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
 
 * *BelVis-Statistics.sql*
 
-  This scripts can be executed on any BelVis tenant to create new database statistics and set some statistics to recommended values. It is advises to run this script as a regular job. Use BelVis-Script-on-BelVisAdm.sql to create the job script.
+  This scripts can be executed on any BelVis tenant to create new database statistics and set some statistics to recommended values. It is advised to run this script as a regular job. Use BelVis-Script-on-BelVisAdm.sql to create the job script.
   
 * *BelVis-Systeminfo-Correction.sql*
 
@@ -77,6 +77,10 @@ These scripts are geared towards tasks related to BelVis3 Energy Data Management
 * *BelVis Entstehungsbeginn-PFM.sql*
 
   This scripts modifies the "Entstehungsbeginn" in BelVis PFM.  Since there is no GUI option to modify the setting, this setting is changed in the database directly.  Review Script before executing and adapt the desired date.  With new tenants there may be not entry at all in the database - for this case two conditional insert statements are included in the script.  This script works on BelVis EDM and PFM, however in EDM using the GUI is recommended.
+
+* *BelVis-Add-Import-Origin.sql*
+
+  This script adds the origin 'Import' or 'Versionserstellung bei Import' to existing time series.  Please read the comment in the script before using it.
 
 ## BelVis3 PFM Scripts
   
